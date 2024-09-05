@@ -4,11 +4,20 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-      "start": "serve src"
+        "start": "serve src",
+        "build": "webpack --config webpack.config.js"
     },
     "keywords": [],
     "author": "",
     "devDependencies": {
-      "serve": "^11.3.0"
+        "@babel/core": "^7.25.2",
+        "@babel/preset-env": "^7.25.4",
+        "babel-loader": "^9.1.3",
+        "serve": "^11.3.0",
+        "webpack": "^5.94.0",
+        "webpack-cli": "^5.1.4"
+    },
+    "dependencies": {
+        "firebase": "^10.13.1"
     }
-  }
+}
